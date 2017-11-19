@@ -7,9 +7,9 @@ class APIException(Exception):
         self.status_code = status_code
 
 
-class QuickReplay(object):
+class QuickReply(object):
     def __init__(self, title, payload=None):
-        """Quick Replay
+        """Quick Reply
 
         :param title: text of the button (required)
         :type title: str
@@ -114,7 +114,7 @@ class Bot(object):
         :type conversation_id: int
         :param message: content of the message (optional)
         :type message: str
-        :param quick_replies: list of QuickReplay (optional)
+        :param quick_replies: list of QuickReply (optional)
         :type quick_replies: list
         :param template: Template object
         :type Template
